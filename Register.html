@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - My E-Commerce Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>🛒 My E-Commerce Store</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="cart.html">Cart 🛒</a>
+        <a href="login.html">Login</a>
+    </nav>
+
+    <div class="container">
+
+        <h2>Create New Account</h2>
+
+        <form onsubmit="register(event)">
+
+            <label>Full Name:</label><br>
+            <input type="text" id="name" required>
+
+            <br><br>
+
+            <label>Email:</label><br>
+            <input type="email" id="email" required>
+
+            <br><br>
+
+            <label>Password:</label><br>
+            <input type="password" id="password" required>
+
+            <br><br>
+
+            <button type="submit">Register</button>
+
+        </form>
+
+        <p>Already have an account?</p>
+        <a href="login.html">Login Here</a>
+
+    </div>
+
+    <script>
+        function register(event) {
+            event.preventDefault();
+
+            let name = document.getElementById("name").value;
+
+            alert("Registration successful! Welcome " + name);
+        }
+    </script>
+
+</body>
+</html>
