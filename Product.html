@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>🛒 My E-Commerce Store</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="cart.html">Cart 🛒</a>
+        <a href="login.html">Login</a>
+    </nav>
+
+    <div class="container">
+
+        <h2>Product Details</h2>
+
+        <div class="product">
+
+            <img src="https://via.placeholder.com/250" alt="Smart Watch">
+
+            <h2>Smart Watch</h2>
+
+            <h3>Price: ₹1,999</h3>
+
+            <p>
+                This is a smart watch with useful features
+                for everyday use.
+            </p>
+
+            <p><b>Availability:</b> In Stock</p>
+
+            <button onclick="addProduct()">
+                Add to Cart
+            </button>
+
+        </div>
+
+    </div>
+
+    <script>
+        function addProduct() {
+            alert("Smart Watch added to cart!");
+        }
+    </script>
+
+</body>
+</html>
